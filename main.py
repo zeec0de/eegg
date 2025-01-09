@@ -41,7 +41,7 @@ from src.account_manager.account_auth import AccountAuth
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-os.system(f"title VALORANT rank yoinker v{version}")
+os.system(f"title Yolk v{version}")
 
 server = ""
 
@@ -145,7 +145,7 @@ try:
     # asyncio.set_event_loop(loop)
     # loop.run_forever()
 
-    log(f"VALORANT rank yoinker v{version}")
+    log(f"Yolk v{version}")
 
 
     valoApiSkins = requests.get("https://valorant-api.com/v1/weapons/skins")
@@ -154,9 +154,9 @@ try:
     previousSeasonID = content.get_previous_season_id(gameContent)
     lastGameState = ""
 
-    print("\nvRY Mobile", color(f"- {get_ip()}:{cfg.port}", fore=(255, 127, 80)))
+    # print("\nvRY Mobile", color(f"- {get_ip()}:{cfg.port}", fore=(255, 127, 80)))
 
-    print(color("\nVisit https://vry.netlify.app/matchLoadouts to view full player inventories\n", fore=(255, 253, 205)))
+    # print(color("\nVisit https://vry.netlify.app/matchLoadouts to view full player inventories\n", fore=(255, 253, 205)))
     chatlog(color("\nVisit https://vry.netlify.app/matchLoadouts to view full player inventories\n", fore=(255, 253, 205)))
 
 
@@ -775,7 +775,7 @@ try:
                 # We don't to show the RR column if the "aggregate_rank_rr" feature flag is True.
                 table.set_runtime_col_flag('RR', cfg.table.get("rr") and not cfg.get_feature_flag("aggregate_rank_rr"))
 
-                table.set_caption(f"VALORANT rank yoinker v{version}")
+                table.set_caption(f"Yolk v{version}")
                 Server.send_payload("heartbeat",heartbeat_data)
                 table.display()
                 firstPrint = False
