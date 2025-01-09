@@ -431,9 +431,8 @@ try:
                         # LEVEL
                         level = PLcolor
                         table.add_row_table([party_icon,
-                                              name,
-                                              level,
                                               agent,
+                                              name,
                                               # views,
                                               skin,
                                               rankName,
@@ -443,7 +442,8 @@ try:
                                               leaderboard,
                                               hs,
                                               wr,
-                                              kd
+                                              kd,
+                                              level
                                               ])
 
                         heartbeat_data["players"][player["Subject"]] = {
