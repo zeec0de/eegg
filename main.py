@@ -95,8 +95,6 @@ try:
 
     ErrorSRC = Error(log, acc_manager)
 
-    Requests.check_version(version, Requests.copy_run_update_script)
-    Requests.check_status()
     Requests = Requests(version, log, ErrorSRC)
 
     cfg = Config(log)
