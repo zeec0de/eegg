@@ -45,7 +45,6 @@ os.system(f"title Yolk v{version}")
 
 server = ""
 
-
 def program_exit(status: int):  # so we don't need to import the entire sys module
     log(f"exited program with error code {status}")
     raise sys.exit(status)
