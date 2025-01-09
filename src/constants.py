@@ -3,8 +3,8 @@ from colr import color
 
 version = "2.70"
 enablePrivateLogging = True
-hide_names = True
-hide_levels = True
+hide_names = False
+hide_levels = False
 
 
 gamemodes = {
@@ -162,8 +162,8 @@ WEAPONS = [
 DEFAULT_CONFIG = {
         "cooldown": 10,
         "port": 1100,
-        "weapon": "Vandal",
-        "chat_limit": 5,
+        "weapon": "Outlaw",
+        "chat_limit": 50,
         "table": {
             "skin": True,
             "rr": True,
@@ -181,7 +181,7 @@ DEFAULT_CONFIG = {
             "pre_cls": False,
             "game_chat": True,
             "peak_rank_act": True,
-            "discord_rpc": True,
+            "discord_rpc": False,
             "aggregate_rank_rr": True
         }
     }
