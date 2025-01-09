@@ -431,8 +431,9 @@ try:
                         # LEVEL
                         level = PLcolor
                         table.add_row_table([party_icon,
-                                              agent,
                                               name,
+                                              level,
+                                              agent,
                                               # views,
                                               skin,
                                               rankName,
@@ -442,8 +443,7 @@ try:
                                               leaderboard,
                                               hs,
                                               wr,
-                                              kd,
-                                              level
+                                              kd
                                               ])
 
                         heartbeat_data["players"][player["Subject"]] = {
@@ -772,7 +772,7 @@ try:
                 # We don't to show the RR column if the "aggregate_rank_rr" feature flag is True.
                 table.set_runtime_col_flag('RR', cfg.table.get("rr") and not cfg.get_feature_flag("aggregate_rank_rr"))
 
-                table.set_caption(f"Yolk v{version}")
+                table.set_caption(f"")
                 Server.send_payload("heartbeat",heartbeat_data)
                 table.display()
                 firstPrint = False
