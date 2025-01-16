@@ -80,10 +80,10 @@ class Rpc():
                     elif presence["sessionLoopState"] == "MENUS":
                         if presence["isIdle"]:
                             image = "game_icon_yellow"
-                            image_text = "VALORANT - Idle"
+                            image_text = "VALORANT - AFK"
                         else:
                             image = "game_icon"
-                            image_text = "VALORANT - Online"
+                            image_text = "VALORANT - Join Me"
 
                         if presence["partyAccessibility"] == "OPEN":
                             party_string = "Open Party"
@@ -103,7 +103,7 @@ class Rpc():
                             large_text=image_text,
                             small_image=str(self.data.get("rank")),
                             small_text=self.data.get("rank_name"),
-                            buttons=[{"label": "What's this? 👀", "url": "https://zaykenyon.github.io/VALORANT-rank-yoinker/"}]
+                            buttons=[{"label": "What's this?", "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"}]
                         )
                         self.log("RPC menu data update")
                     elif presence["sessionLoopState"] == "PREGAME":
@@ -126,7 +126,7 @@ class Rpc():
                             large_text=mapText,
                             small_image=str(self.data.get("rank")),
                             small_text=self.data.get("rank_name"),
-                            buttons=[{"label": "What's this? 👀", "url": "https://zaykenyon.github.io/VALORANT-rank-yoinker/"}]
+                            buttons=[{"label": "Whats this?", "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"}]
                         )
                         self.log("RPC agent-select data update")
             except InvalidID:
