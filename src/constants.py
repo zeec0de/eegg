@@ -162,7 +162,7 @@ WEAPONS = [
 DEFAULT_CONFIG = {
         "cooldown": 10,
         "port": 1100,
-        "weapon": "Outlaw",
+        "weapon": "Vandal",
         "chat_limit": 50,
         "table": {
             "skin": True,
@@ -178,8 +178,8 @@ DEFAULT_CONFIG = {
         "flags": {
             "last_played": True,
             "auto_hide_leaderboard": True,
-            "pre_cls": False,
-            "game_chat": True,
+            "pre_cls": True,
+            "game_chat": False,
             "peak_rank_act": True,
             "discord_rpc": False,
             "aggregate_rank_rr": True
