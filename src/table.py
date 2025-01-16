@@ -34,14 +34,14 @@ class Table:
             bool(config.table.get("rr", True)),  # RR
             bool(config.table.get("peakrank", True)),  # Peak Rank
             bool(config.table.get("previousrank", False)), # Previous Rank
-            bool(config.table.get("leaderboard", True)),  # Leaderboard Position
+            bool(config.table.get("leaderboard", False)),  # Leaderboard Position
             bool(
-                config.table.get("headshot_percent", True)
+                config.table.get("headshot_percent", False)
             ),  # hs
             bool(
                 config.table.get("winrate", True)
             ),  # wr
-            bool(config.table.get("kd", True)),  # KD
+            bool(config.table.get("kd", False)),  # KD
             bool(config.table.get("level", True)),  # Level
         ]
         self.runtime_col_flags = self.col_flags[:]  # making a copy
